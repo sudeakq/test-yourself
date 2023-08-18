@@ -9,60 +9,60 @@ function App() {
 
   const questions = [
     {
-      text: "I see myself as a successful person.",
+      text: "Kendimi başarılı görüyorum.",
       options: [
-        { id: 0, text: "never", isCorrect: false },
-        { id: 1, text: "rarely", isCorrect: false },
-        { id: 3, text: "often", isCorrect: true },
+        { id: 0, text: "asla", isCorrect: false },
+        { id: 1, text: "bazen", isCorrect: false },
+        { id: 3, text: "sık sık", isCorrect: true },
 
       ],
     },
     {
-      text: "I can control my excitement around other people.",
+      text: "Diğer insanların yanında heyecanımı kontrol edebilirim.",
       options: [
-        { id: 0, text: "never", isCorrect: false },
-        { id: 1, text: "rarely", isCorrect: false },
-        { id: 3, text: "often", isCorrect: true },
+        { id: 0, text: "asla", isCorrect: false },
+        { id: 1, text: "bazen", isCorrect: false },
+        { id: 3, text: "sık sık", isCorrect: true },
       ],
     },
     {
-      text: "I can deal with difficulties in life.",
+      text: "Hayattaki zorluklarla başa çıkabilirim.",
       options: [
-        { id: 0, text: "never", isCorrect: false },
-        { id: 1, text: "rarely", isCorrect: false },
-        { id: 3, text: "often", isCorrect: true },
+        { id: 0, text: "asla", isCorrect: false },
+        { id: 1, text: "bazen", isCorrect: false },
+        { id: 3, text: "sık sık", isCorrect: true },
       ],
     },
     {
-      text: "I do not hesitate to participate in social events.",
+      text: "Sosyal etkinliklere katılmaktan çekinmem.",
       options: [
-        { id: 0, text: "never", isCorrect: false },
-        { id: 1, text: "rarely", isCorrect: false },
-        { id: 3, text: "often", isCorrect: true },
+        { id: 0, text: "asla", isCorrect: false },
+        { id: 1, text: "bazen", isCorrect: false },
+        { id: 3, text: "sık sık", isCorrect: true },
       ],
     },
     {
-      text: "I can express myself comfortably.",
+      text: "Kendimi rahatça ifade edebilirim.",
       options: [
-        { id: 0, text: "never", isCorrect: false },
-        { id: 1, text: "rarely", isCorrect: false },
-        { id: 3, text: "often", isCorrect: true },
+        { id: 0, text: "asla", isCorrect: false },
+        { id: 1, text: "bazen", isCorrect: false },
+        { id: 3, text: "sık sık", isCorrect: true },
       ],
     },
     {
-      text: "I do not hesitate to take responsibility.",
+      text: "Sorumluluk almaktan çekinmem.",
       options: [
-        { id: 0, text: "never", isCorrect: false },
-        { id: 1, text: "rarely", isCorrect: false },
-        { id: 3, text: "often", isCorrect: true },
+        { id: 0, text: "asla", isCorrect: false },
+        { id: 1, text: "bazen", isCorrect: false },
+        { id: 3, text: "sık sık", isCorrect: true },
       ],
     },
     {
-      text: "I love myself.",
+      text: "Kendimi seviyorum.",
       options: [
-        { id: 0, text: "never", isCorrect: false },
-        { id: 1, text: "rarely", isCorrect: false },
-        { id: 3, text: "often", isCorrect: true },
+        { id: 0, text: "asla", isCorrect: false },
+        { id: 1, text: "bazen", isCorrect: false },
+        { id: 3, text: "sık sık", isCorrect: true },
       ],
     },
   ];
@@ -88,17 +88,17 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-        <h1>Self Reliance Test</h1>
-        <h2>Current Score : {score}</h2>
+        <h1>Özgüven Testi</h1>
+        <h2>Skor:  {score}</h2>
 
         {
           showFinalResult ?
             <div className='result'>
-              <h1>Result</h1>
+              <h1>Sonuç:</h1>
               <h2>
                 {score} out of {questions.length} you are - {(score / questions.length) * 100}% - self-confident
               </h2>
-              <button onClick={() => restartGame()}>Restart Test</button>
+              <button onClick={() => restartGame()}>Baştan yap</button>
             </div>
             :
             <div className='question-card'>
