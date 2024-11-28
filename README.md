@@ -1,3 +1,6 @@
+# Test App
+This project is for confident test. There is 10 questions about yourself and in the end of the questions you will see how much percent confident you are ! I developed this app with react.js
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
